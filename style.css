@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: powderblue;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar {
+    width: 100%;
+    max-width: 1200px;
+    height: 75px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 0 10px;
+    flex-wrap: wrap; 
+}
+
+
+.icon {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    color: floralwhite;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+}
+
+
+.menu {
+    flex: 2;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    margin: 0 15px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    transition: color 0.4s ease-in-out;
+}
+
+.menu ul li a:hover {
+    color: orange;
+}
+
+
+.search {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.btn {
+    width: 100px;
+    height: 40px;
+    background: rgb(222, 229, 230);
+    border: 2px solid white;
+    color: white;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+
+.content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    color: rgb(10, 10, 10);
+    padding: 0 10px;
+}
+
+.content h1 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 2.5rem;
+    margin-top: 20px;
+    padding-left: 20px;
+    letter-spacing: 2px;
+}
+
+.content .par {
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial, sans-serif;
+    letter-spacing: 1.2px;
+    line-height: 1.5;
+}
+
+#countryCodeInput {
+    width: 100%;
+    max-width: 200px;
+    height: 40px;
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#earthquakeContainer {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.earthquake-item {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #f9f9f9;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu {
+        width: 100%;
+        justify-content: flex-start;
+        margin-top: 10px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .menu ul li {
+        margin: 10px 0;
+    }
+
+    .search {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .srch, .btn {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .content h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 20px;
+    }
+
+    .menu ul li {
+        margin: 5px 0;
+    }
+
+    .content h1 {
+        font-size: 1.5rem;
+    }
+}

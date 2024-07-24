@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Earthquake Information</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: powderblue;">
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">Earthquake Center</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="EarthquakeCenter.html">EarthQuake Center</a></li>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="information.html">Information</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <h1>Earthquake</h1>
+            <p class="par">
+                Earthquake, any sudden shaking of the ground caused by the passage of seismic waves through Earth’s rocks. Seismic waves are produced when some form of energy stored in Earth’s crust is suddenly released, usually when masses of rock straining against one another suddenly fracture and “slip.” <br>
+                Earthquakes occur when two pieces of the Earth's crust, called tectonic plates, suddenly move past each other along a fault line. The magnitude of an earthquake is measured using a seismograph and the Richter scale. <br>
+                The Richter scale is a logarithmic scale that measures the power of an earthquake by calculating the logarithm of the amplitude of the largest seismic wave recorded by the seismograph.<br>
+                 The scale also takes into account the distance between the earthquake and the seismograph.
+            </p>
+            
+            <h1>Earthquake Data</h1>
+            <input type="text" id="countryCodeInput" placeholder="Enter country Code">
+            <button id="searchButton">Search</button>
+            <button id ="Chinabutton">China</button>
+            <button id ="Indonesiabutton"> Indonesia</button>
+            <button id ="Iranbutton"> Iran </button>
+            <button id ="Japanbutton"> Japan </button>
+            <button id ="UnitedStatesbutton"> United States </button>
+            <div id="earthquakeContainer"></div>
+            <div id="earthquake-container"></div>
+        </div>
+    </div>
+    <script src="main.js" type="module"></script>
+</body>
+</html>
